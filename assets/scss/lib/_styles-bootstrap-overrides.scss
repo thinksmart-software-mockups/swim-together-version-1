@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////
+/* Bootstrap Overrides */
+
+/////////////////////////////////////////  
+// Bootstrap card to transparent
+$card-cap-bg: transparent !default;
+
+/////////////////////////////////////////
+
+/* Updating all body text to Roboto */
+/* Updating all body text to Roboto */
+// $font-family-base: 'Roboto', sans-serif;
+// $font-family-base: 'Open Sans', sans-serif;
+$font-family-base: 'Nunito', sans-serif;
+// $font-family-base: 'Montserrat', sans-serif;
+
+// $font-family-sans-serif:      Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+/////////////////////////////////////////
+/* Updating the colors for all biz products */
+$green: #5fcf80; // success button
+
+/////////////////////////////////////////
+/* All - Btn-success border bottom for all biz products */
+// .btn-success {
+//     box-shadow: 0 3px 0 darken($green, 20%);
+// }
+
+/////////////////////////////////////////
+/* Overriding box shadow values for all */
+$box-shadow: 0 0 .75rem 0 rgba(0,0,0,.25);
+$box-shadow-lg: $box-shadow;
+.shadow-lg {
+    box-shadow: none;
+    @media (min-width: 992px) { 
+        box-shadow: $box-shadow-lg;
+    }
+}
+
+/////////////////////////////////////////
+/* Default body text color */
+// ThinkSmart Software General Colors 
+$thinksmart-body-text: darken(#686868, 10%);
+
+// Body text for all
+$grey: $thinksmart-body-text;
+
+// Bootstrap's default body text color changes to thinksmart's
+$body-color: $grey;
+
+/////////////////////////////////////////
+/* Do not use */
+/* Updating the Font Family Base to Roboto */
+// $font-family-sans-serif:
+//   // Safari for macOS and iOS (San Francisco)
+//   // -apple-system,
+//   // Chrome < 56 for macOS (San Francisco)
+//   // BlinkMacSystemFont,
+//   // Windows
+//   // "Segoe UI",
+//   "Roboto",
+//   // Android
+//   "Roboto",
+//   // Basic web fallback
+//   "Helvetica Neue", Arial, sans-serif,
+//   // Emoji fonts
+//   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;

@@ -1,0 +1,156 @@
+////////////////////////////////////////////////
+/* pricing styles */
+
+.pricing-header {
+    // padding: 100px;
+    // background-color: red;
+    @media screen and (min-width: 768px) {
+        font-size: 2.5rem;
+    }
+}
+
+
+.pricing-container-card {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 576px) {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    // @include media-breakpoint-up(sm) {
+    //     margin-left: .5rem;
+    //     margin-right: .5rem;
+    // }
+
+    @media screen and (min-width: 768px) {
+        width: 205px;
+        // height: 300px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 205px;
+        height: 238px;
+    }
+    // @include media-breakpoint-up(md) {
+
+    // }
+
+}
+
+.crowd-bg:after {
+    content: "";
+    position: absolute;
+    height: 145px;
+    width: 100%;
+    left: 0;
+    background-image: url("../img/generic-pricing-page-crowd.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: -10px;
+    z-index: -10;
+    @media screen and (min-width: 1200px) {
+        top: -40px;
+        left: 5%;
+        width: 90%;
+    }
+}
+
+// main slide for testimonials
+.pricing-main-slide-container-for-client-testimonials {
+    
+    .testimonials-slide-container {
+        height: auto;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        position: absolute;
+        background-image: none;
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+        @include media-breakpoint-up(lg) {
+            // width: 53.33%;
+            width: 7.5%;
+        }
+        
+        @include media-breakpoint-up(xl) {
+            // width: 53.33%;
+            width: 5%;
+        }
+    }
+
+    .carousel-control-next-icon:after {
+      content: '\f105';
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $gray-400;
+    }
+    
+    .carousel-control-prev-icon:after {
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      content: '\f104';
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $gray-400;
+    }
+
+    .carousel-indicators li {
+        background-color: $gray-200;
+    }
+
+    .carousel-indicators .active {
+        background-color: $gray-500;
+    }
+
+    .carousel-indicators {
+        bottom: -1.5rem;
+    }
+}
+
+/* country selector styles */
+#country-pricing-selector {
+    .row {
+        .list-group-item:hover {
+            background-color: #c5c2c2;
+            transition: 0.9s;
+            border-radius: 5px;
+        }
+
+        .list-group-item.active {
+            background-color: #f4f4f4;
+            // background-color: #686868 !important;
+            // border: 1px solid #686868 !important;
+            color: #424242;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    }
+}
+
+// .pricing-container-card {
+//     div[class*="pricing-content-"] { 
+//         display:none;
+//       }
+      
+//       div.pricing-active { 
+//         display:block;
+//       }
+// }
+
+/////////////////////////////////////////////////////////////////////////
+.pricing-container-card {
+    div[class*="pricing-content-"] { 
+        display:none;
+      }
+      
+      div.pricing-active { 
+        display:block;
+      }
+}
+
+///////////////////////////////////////////////////////////////////

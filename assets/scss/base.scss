@@ -1,0 +1,506 @@
+@import 'lib/_styles-bootstrap-overrides.scss';
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+
+/* -------start customization-------- */
+/* ClassBiz colors */
+$cb-primary: #773079;
+$cb-secondary: #c78ec7;
+$cb-dark: rgb(85, 34, 85);
+
+/* DanceBiz colors */
+$db-primary: #bd1a8d;
+$db-secondary: #ffa8e4;
+$db-dark: rgb(117, 5, 84);
+
+/* GymnasticsBiz Colors */
+$gb-primary: rgb(233, 131, 15);
+$gb-secondary: rgb(248, 194, 132);
+$gb-dark: rgb(146, 73, 4);
+
+/* MusicBiz */
+$mb-primary: rgb(178, 125, 43);
+$mb-secondary: rgba(243, 203, 142, 0.8);
+$mb-dark: rgb(179, 121, 35);
+
+/* SportsBiz */
+$sb-primary: rgb(204, 36, 42);
+$sb-secondary: rgb(250, 133, 133);
+$sb-dark: rgb(173, 25, 30);
+
+/* SwimBiz */
+$swb-primary: rgb(3, 112, 201);
+$swb-secondary:rgb(142, 201, 250);
+$swb-dark: rgb(10, 85, 170);
+
+/* TennisBiz */
+$tb-primary: rgb(1, 128, 69);
+$tb-secondary:rgb(138, 236, 168);
+$tb-dark: rgb(3, 83, 46);
+
+/* ThinkSmart Software */
+$tss-primary: rgb(2, 79, 161);
+// $tss-secondary:rgb(0, 173, 238);
+$tss-secondary:rgb(129, 221, 255);
+$tss-dark: rgb(7, 57, 133);
+
+$theme-colors: (
+    /* classbiz */
+    cb-primary: $cb-primary, // example for background is ".bg-cb-primary", for text ".text-cb-primary"
+    cb-secondary: $cb-secondary, // example for background is ".bg-cb-secondary", for text ".text-cb-secondary"
+    cb-dark: $cb-dark, // example for background is ".bg-cb-dark", for text ".text-cb-dark"
+    /* dancebiz */
+    db-primary: $db-primary,
+    db-secondary: $db-secondary,
+    db-dark: $db-dark,
+    /* gymnasticsbiz */
+    gb-primary: $gb-primary,
+    gb-secondary: $gb-secondary,
+    gb-dark: $gb-dark,
+    /* musicbiz */
+    mb-primary: $mb-primary,
+    mb-secondary: $mb-secondary,
+    mb-dark: $mb-dark,
+    /* sportsbiz */
+    sb-primary: $sb-primary,
+    sb-secondary: $sb-secondary,
+    sb-dark: $sb-dark,
+    /* swimbiz */
+    swb-primary: $swb-primary,
+    swb-secondary: $swb-secondary,
+    swb-dark: $swb-dark,
+    /* tennisbiz */
+    tb-primary: $tb-primary,
+    tb-secondary: $tb-secondary,
+    tb-dark: $tb-dark,
+    /* thinksmart software brand */
+    tss-primary: $tss-primary,
+    tss-secondary: $tss-secondary,
+    tss-dark: $tss-dark);
+
+/* -------end customization-------- */
+/////////////////////////////////////////////////////////////////////////
+/* adding shadows for the buttons */
+@mixin button-shadows ($theme, $shadow-theme) {
+    .btn-#{$theme}.button-shadow {
+        box-shadow: 0 4px darken(map-get($theme-colors, $shadow-theme), 5%);
+    }
+}
+
+@include button-shadows("cb-primary", "cb-dark");
+@include button-shadows("db-primary", "db-dark");
+@include button-shadows("gb-primary", "gb-dark");
+@include button-shadows("mb-primary", "mb-dark");
+@include button-shadows("sb-primary", "sb-dark");
+@include button-shadows("swb-primary", "swb-dark");
+@include button-shadows("tb-primary", "tb-dark");
+@include button-shadows("tss-primary", "tss-dark");
+/////////////////////////////////////////////////////////////////////////
+
+@import 'lib/_styles-biz-colors.scss';
+@import 'lib/_styles-background-shapes.scss';
+@import 'lib/_styles-header.scss';
+@import 'lib/_styles-footer.scss';
+@import 'lib/_styles-gradients.scss';
+
+/////////////////////////////////////////////////////////////////////////
+// import bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Biz Product Page Specific Styles
+@import 'lib/_styles-page-overview-index.scss';
+@import 'lib/_styles-page-features.scss';
+@import 'lib/_styles-page-pricing.scss';
+@import 'lib/_styles-page-download.scss';
+@import 'lib/_styles-page-about-us.scss';
+@import 'lib/_styles-page-blog.scss';
+@import 'lib/_styles-page-contact-us.scss';
+@import 'lib/_styles-page-sign-up.scss';
+@import 'lib/_styles-page-landing.scss';
+
+// ThinkSmart Software Pages Only
+@import 'lib/_styles-animate.scss';
+@import 'lib/_styles-tss.scss';
+
+/////////////////////////////////////////////////////////////////////////
+/* smooth scroll start */
+html {
+    scroll-behavior: smooth;
+}
+
+/* smooth scroll end */
+/////////////////////////////////////////////////////////////////////////
+/* Changing the opacity / color of the placeholder */
+input::placeholder {
+    opacity: .7 !important;
+}
+
+/////////////////////////////////////////////////////////////////////////
+/* opacity utilities*/
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 0.2;
+}
+
+.opacity-2 {
+    opacity: 0.4;
+}
+
+.opacity-3 {
+    opacity: 0.6;
+}
+
+.opacity-4 {
+    opacity: .8;
+}
+
+.opacity-5 {
+    opacity: 1;
+}
+
+/////////////////////////////////////////////////////////////////////////
+/* overflow utilities */
+.overflow-visible,
+.overflow-show {
+    overflow: visible;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/////////////////////////////////////////////////////////////////////////
+/* text shadow */
+.text-shadow {
+    text-shadow: 0 0 9px rgba(0, 0, 0, .5);
+}
+
+/////////////////////////////////////////////////////////////////////////
+/* cursor pointer utility */
+.pointer {
+    cursor: pointer;
+}
+
+// svg shadows
+.headline-svg-shadow,
+.logo-icon-svg-shadow,
+.generic-svg-shadow {
+    -webkit-filter: drop-shadow(0 0 9px rgba(0, 0, 0, .5));
+    filter: drop-shadow(0 0 9px rgba(0, 0, 0, .5));
+}
+
+/* Updating all headings to Open Sans */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    // font-family: "Nunito Sans", sans-serif;
+    // font-family: "Lato", sans-serif;
+    // font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    // color: $primary;
+}
+
+.product-name {
+    margin-top: -180px !important;
+    padding-top: 180px !important;
+    @media screen and (min-width: 768px) {
+        margin-top: 15px !important;
+        padding-top: 0 !important;
+    }
+}
+
+////////////////////////////////////////////////
+/* profile card styles start */
+.profile-card {
+    width: 100%;
+    @media screen and (min-width: 576px) {    
+        width: 195px;
+        height: 250px !important;
+    }
+    @media screen and (min-width: 992px) {    
+        width: 200px;
+        height: 240px !important;
+    }
+    @media screen and (min-width: 1200px) {    
+        width: 200px;
+        height: 245px !important;
+    }
+}
+
+.card-profile-picture-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    overflow: visible;
+    @media screen and (min-width: 576px) {
+        border-radius: 5px 5px 0 0;
+    }
+}
+
+.card-profile-pic-holder {
+    width: 70px;
+    height: 70px;
+    border: 5px solid #fff;
+    @media screen and (min-width: 576px) {    
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: 40px;
+    }
+}
+
+.staff-name {
+    @media screen and (min-width: 576px) {    
+        position: relative;
+        top: 32px;
+    } 
+}
+
+.staff-title {
+    @media screen and (min-width: 576px) {    
+        height: 45px;
+    }
+    .job-title {
+        line-height: 1.1;
+    }
+}
+
+.staff-info-container {
+    @media screen and (min-width: 576px) {    
+        height: 100%;
+    }
+    .staff-bg-height {
+        @media screen and (min-width: 576px) {    
+            height: 80px;
+        }
+    }
+}
+
+////////////////////////////////////////////////
+.db-landing-and-signup-hero {
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    z-index: -1;
+    width: auto;
+    height: 105%;
+    @media screen and (min-width: 1200px) {    
+        top: -25px;
+        left: -5px;
+        width: 101%;
+        height: auto;
+        opacity: .9;
+    }
+}
+
+.landing-page-headings-medium {
+    @media screen and (min-width: 992px) {    
+        font-size: 2rem !important;
+        font-weight: 100 !important;
+    }
+    @media screen and (min-width: 1200px) {    
+        font-size: 2.5rem !important;
+    }
+}
+
+.landing-page-headings-large {
+    @media screen and (min-width: 992px) {    
+        font-size: 3rem !important;
+        font-weight: 600 !important;
+        letter-spacing: 1px;
+    }
+    @media screen and (min-width: 1200px) {    
+        font-size: 3.5rem !important;
+        font-weight: 600 !important;
+        letter-spacing: 1px;
+    }
+}
+
+.agreements-flag-size {
+    font-size: 3.5rem;
+}
+
+/* 404 Page Styles */
+// .text-dotted-underline {
+//     border-bottom: 1px dotted;
+// }
+
+.material-icons {
+    // font-size: inherit;
+    font-size: 1.375rem;
+    line-height: inherit;
+}
+
+
+.material-icons-big {
+    // font-size: inherit;
+    font-size: 1.75rem !important;
+    line-height: inherit;
+}
+
+.material-icons-nav {
+    font-size: 1.25rem;
+    line-height: inherit;
+}
+
+.navbar-brand {
+    font-family: "Nunito";
+    letter-spacing: 1px;
+}
+
+.font-weight-medium {
+    font-weight: 600;
+}
+
+.selected-1 {
+    @media screen and (min-width: 992px) {
+        // background-color: lighten($dark,2%);
+        // background-color: rgba(0,0,0,12%);
+        // height: 100% !important;
+        // background: rgb(3,14,65);
+        background: rgb(3,14,65);
+        background: linear-gradient(180deg, rgba(3,14,65,1) 5%, rgba(2,49,87,0.5158438375350141) 67%, rgba(0,212,255,0) 100%);        // background: yellow;
+    }
+}
+
+.nav-bg-image {
+    // z-index: -9999;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: url("../img/swim-together/nav-graphic.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // background-color: rgb(2, 79, 161);
+    // background-color: rgb(11, 123, 243);
+    // background-blend-mode: multiply;
+
+    @media screen and (min-width: 992px) {
+        background-size: cover; /* Resize the background image to cover the entire container */
+        background-size: 100% 100%;
+        // top: -10%;
+    }
+}
+
+.nav-gradient-2:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    // background: rgb(0,0,0);
+    // background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0.3) 75%);
+    @media screen and (min-width: 992px) {
+        // opacity: .5;
+        background: radial-gradient(circle, rgba(3,28,87,.1) 0%, rgba(3,28,87,.3) 25%, rgba(3,28,87) 65%, rgb(3, 22, 68) 95%);
+        // background: rgba(7, 9, 107, .2);
+    }
+
+}
+
+.dropdown-toggle::after {
+    position: relative;
+    top: 2px;
+}
+
+.form-control-line-only {
+    // border-bottom: 1px solid #e2e2e2 !important;
+    border-radius: 0;
+    // width: 100px;
+}
+
+.input-group-text {
+    background-color: transparent;
+}
+
+/* webkit solution */
+::-webkit-input-placeholder { text-align:right; }
+/* mozilla solution */
+input:-moz-placeholder { text-align:right; }
+
+////////////////////////////////////////////////////@at-root
+
+
+.list-group-item {
+    border-radius: 0 !important;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    // border-color: red !important;
+
+}
+
+.list-group {
+    border-radius: 0 !important;
+    border: 1px 0 1px 0 !important;
+}
+
+.avatar-img-style {
+    height: 32px;
+    width: auto;
+}
+
+.cs-1 {
+    padding: .5rem 0 .5rem 0;
+
+    @media screen and (min-width: 992px) {    
+        padding: 1rem 0 .75rem 0;
+
+    }
+}
+
+.badge-pill {
+    background-color: $tss-secondary;
+}
+
+.clip-image {
+    @media screen and (min-width: 576px) {    
+        position: relative;
+        top: -55px;
+    }
+}
+
+.img-container {
+    height: 170px;   
+}
+
+.clip-image-2 {
+    @media screen and (min-width: 576px) {    
+        position: relative;
+        top: -120px;
+    }
+}
+
+.clip-image-3 {
+    @media screen and (min-width: 576px) {    
+        position: relative;
+        top: -160px;
+    }
+
+}
+
+.line-comment {
+
+    @media screen and (min-width: 992px) {    
+        position: absolute;
+        left: 40px;
+        bottom: 211px;
+    }
+    @media screen and (min-width: 1200px) {    
+        position: absolute;
+        left: 40px;
+        bottom: 187px;
+    }
+
+}

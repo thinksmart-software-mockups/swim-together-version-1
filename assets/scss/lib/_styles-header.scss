@@ -1,0 +1,57 @@
+/* logo icon fixed width */
+.icon-logo-style {
+    width: 50px;
+    height: auto;
+    @media screen and (min-width: 992px) {
+        height: auto;
+        width: 55px;
+    }
+}
+
+/* ThinkSmart Software Specific Styles */
+.icon-logo-style-tss {
+    height: 50px;
+    width: auto;
+    @media screen and (min-width: 768px) {    
+        height: 60px;
+    }
+    @media screen and (min-width: 1200px) {    
+        height: 70px;
+    }
+}
+
+///////////////////////////////////////////
+//// Start - Navigation Styles for All
+
+.nav-item:hover {
+    @media screen and (min-width: 992px) {
+        // background-color: darken($primary, 10%);
+        $black-custom: rgba(0,0,0, 15%);
+        background-color: darken($black-custom, 5%);
+        transition: 1s;
+    }
+}
+
+/* Navigation - Selected page in large view and up */
+.selected-1 {
+    @media screen and (min-width: 992px) {
+        // background-color: lighten($dark,2%);
+        // background-color: rgba(0,0,0,12%);
+        // height: 100% !important;
+        background: rgb(3,14,65);
+        background: rgb(3,14,65);
+        background: linear-gradient(180deg, rgba(3,14,65,1) 5%, rgba(2,49,87,0.5158438375350141) 67%, rgba(0,212,255,0) 100%);
+        background: yellow;
+    }
+}
+//// End - Navigation Styles for All
+
+///////////////////////////////////////////
+/* Navigation - Border bottom for mobile and tablet only */
+.border-bottom-sm-md {
+    @media screen and (max-width: 991px) {
+        border-bottom: 1px solid rgba(255, 255, 255, .1); 
+    }
+}
+
+

@@ -1,0 +1,66 @@
+// generic image for call center //
+.headset-keyboard-cord-right {
+    position: absolute;
+    width: 470px;
+    height: auto;
+    left: 5%;
+    @include media-breakpoint-up(sm) {
+        width: 550px;
+        left: 10%;
+    }
+    @include media-breakpoint-up(md) {
+        width: 450px;
+        left: 0;
+    }      
+}
+
+.headset-keyboard-cord-left {
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        width: 430px;
+        left: -7.5%;
+        bottom: 8px;
+    }
+    @include media-breakpoint-up(xl) {
+        position: absolute;
+        // width: 440px;
+        left: -5%;
+        bottom: 8px;
+    }
+}
+
+.call-center-image {
+    position: absolute;
+    height: 230px;
+    width: auto;
+    bottom: -1.25rem;
+    right: 4rem;
+
+    @include media-breakpoint-up(xl) {
+        height: 260px;
+    }
+}
+
+.extension-cord {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.call-center-headset-and-keyboard-1 {
+    height: 190px;
+    width: auto;
+    margin-left: -.75rem;
+}
+
+.call-center-headset-and-keyboard {
+    position: absolute;
+    height: 230px;
+    width: auto;
+    bottom: -1.25rem;
+    right: 4rem;
+
+    @include media-breakpoint-up(xl) {
+        height: 260px;
+    }
+}

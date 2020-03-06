@@ -1,0 +1,113 @@
+/* thinksmart software specific styles */
+.zoom {
+        transition: transform .2s;
+      }
+    
+    .zoom:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1);
+      }
+    
+    #reflect {
+        -webkit-box-reflect: below -.8rem linear-gradient(0deg, rgba(255,255,255,.7) 4%, rgba(255,255,255,.2) 12%,  rgba(255,255,255,.1) 16%, rgba(255,255,255,0) 30%);
+    }
+    
+    .logo-dropdown {
+        height: 45px;
+    }
+    
+    .product-card-container {
+        background-color: #fff;
+        @media screen and (min-width: 576px) {
+            height: 300px;
+        }
+        // @media screen and (min-width: 768px) {
+        //     height: 460px;
+        // }
+        // @media screen and (min-width: 992px) {
+        //     height: 420px;
+        // }
+        @media screen and (min-width: 1200px) {
+            height: 300px;
+        }
+    }
+    
+    .product-card-container {
+
+
+        @media screen and (min-width: 576px) {
+       
+        }
+ 
+    }
+
+    .gymnastics-biz-logo {
+        @media screen and (min-width: 576px) {
+            height: 132px;
+        }
+        @media screen and (min-width: 768px) {
+            height: 113px;
+        }
+        @media screen and (min-width: 1200px) {
+            height: 138px;
+        }
+    }
+    
+
+    .tss-mobile-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: block;
+        background-image: url("../img/thinksmart/thinksmart-mobile-bg-3.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        // background-color: rgb(2, 79, 161);
+        background-color: rgb(11, 123, 243);
+        background-blend-mode: multiply;
+        opacity: .5;
+        // z-index: 1;
+        @media screen and (min-width: 992px) {
+            background-size: cover; /* Resize the background image to cover the entire container */
+            background-size: 100% auto;
+            // top: -10%;
+        }
+    }
+
+    .index-testimonials-card {
+        @media screen and (min-width: 992px) {
+            box-shadow: $box-shadow-lg;
+        }
+    }
+
+    @mixin tss-sticky-values-for-headings {
+        margin-top: -190px !important;
+        padding-top: 190px !important;
+    
+        @media screen and (min-width: 576px) {
+            // margin-top: -160px !important;
+            // padding-top: 160px !important;
+        }
+    
+        @media screen and (min-width: 768px) {
+            // margin-top: -160px !important;
+            // padding-top: 160px !important;
+        }
+    
+    }
+
+    /* thinksmart */
+    #tss-mobile-menu.sticky-top.sticky-offset {
+        @media screen and (min-width: 992px) {
+            top: 160px !important;
+        }
+        @media screen and (min-width: 1200px) {
+            top: 160px !important;
+        }
+    }
+
+    .tss-sticky-offset-mobile {
+        top: 70px !important;
+    }
+

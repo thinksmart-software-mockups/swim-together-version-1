@@ -1,0 +1,225 @@
+////////////////////////////////////////////////
+/* dropdown active */
+#categories-mobile, #mobile-menu {
+    .dropdown-item.active, .dropdown-item:active {
+      background-color: #f8f9fa;
+      color: #686868;
+    }
+  }
+
+/* styles for the feature page */
+.features-page-graphic-height {
+    max-height: 120px;
+    @include media-breakpoint-up(lg) {
+        height: 140px;
+    }
+}
+
+.image-overlay:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0, .4);
+    z-index: 9;
+}
+
+.features-hero {
+    opacity: .3;
+    filter: blur(1px);
+}
+
+/* features styles only */
+.features-icons-hero {
+    // width: 50px;
+    width: auto;
+    height: 50px;
+    @include media-breakpoint-up(sm) {
+        // width: 60px;
+        height: 60px;
+    }
+    @include media-breakpoint-up(md) {
+        // width: 60px;
+        height: 60px;
+    }
+    @include media-breakpoint-up(lg) {
+        // width: 60px;
+        height: 60px;
+    }
+}
+
+/* size of icons on left sidebar */
+.features-icons-categories {
+    width: 40px;
+    height: auto;
+}
+
+/* size of icons if full width */
+.features-icons-full-width {
+    width: 40px;
+    height: 40px;
+    @include media-breakpoint-up(lg) {
+        width: 52px;
+        height: 52px;
+
+    }
+}
+
+.categories-link:hover {
+    background-color: lighten(#686868, 50%);
+    transition: 0.9s;
+}
+
+.features-accordion-arrow.mb-0 {
+    position: relative;
+}
+
+.features-accordion-arrow.mb-0:after {
+    content: "\f078"; /* fa-chevron-down */
+    font-family: 'FontAwesome';
+    opacity: .2;
+    position: absolute;
+
+    top: 1.25rem;
+    right: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        top: 1.75rem;
+        right: 1.25rem;
+    }
+    
+}
+
+.features-accordion-arrow.mb-0[aria-expanded="true"]:after {
+    content: "\f077"; /* fa-chevron-up */
+    opacity: .2;
+}
+
+
+.card-header-feature:hover {
+    background-color:lighten(#686868, 55%) !important;
+    transition: 0.9s;
+}
+
+.features-hero-image {
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: -185px;
+        height: 250px;
+        left: 10%;
+    }
+}
+
+/* customer portal - product slider styles 5 */
+.product-slider-section-5 {
+    padding: 0;
+  }
+  .product-slider-section-5 .carousel-inner {
+    cursor: move;
+  }
+  .product-slider-section-5 .carousel-indicators {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  .product-slider-section-5 .carousel-indicators li {
+    border: 2px solid transparent;
+    cursor: pointer;
+    float: left;
+    height: auto;
+    margin: 10px 0 12px 0;
+    padding: 5px;
+    text-align: center;
+    text-indent: unset;
+    // width: 185px;
+  }
+  .product-slider-section-5 .carousel-indicators li.active {
+    border: 2px solid #dddddd;
+  }
+  .product-slider-section-5 .carousel-indicators li .data-slide-image {
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .product-name {
+      margin-top: 30px;
+    }
+  }
+
+/* updating the active color */
+.list-group-item.active {
+    background-color: lighten(#686868, 55%);
+    border-radius: 5px;
+  }
+  
+  .list-group-item-action:hover, .list-group-item-action:focus {
+    border-radius: 5px;
+  }
+
+
+ .sticky-offset-mobile {
+    top: 70px !important;
+}
+
+#features-sidebar-categories.sticky-top.sticky-offset {
+    @media screen and (min-width: 992px) {
+        top: 160px !important;
+    }
+    @media screen and (min-width: 1200px) {
+        top: 160px !important;
+    }
+}
+
+@mixin sticky-values-for-headings {
+    margin-top: -190px !important;
+    padding-top: 190px !important;
+
+    @media screen and (min-width: 576px) {
+        // margin-top: -160px !important;
+        // padding-top: 160px !important;
+    }
+
+    @media screen and (min-width: 768px) {
+        // margin-top: -160px !important;
+        // padding-top: 160px !important;
+    }
+
+    @media screen and (min-width: 992px) {
+        margin-top: -160px !important;
+        padding-top: 160px !important;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: -160px !important;
+        padding-top: 160px !important;
+    }
+}
+
+h5#scheduling.scheduling-heading {
+    @include sticky-values-for-headings;
+}
+
+h5#customers-and-students.customers-and-students-heading {
+    @include sticky-values-for-headings;
+
+}
+
+h5#staff-management.staff-management-heading {
+    @include sticky-values-for-headings;
+
+}
+
+h5#messaging-and-communication.messaging-and-communication-heading {
+    @include sticky-values-for-headings;
+}
+
+h5#online-components.online-components-heading {
+    @include sticky-values-for-headings;
+}
+
+h5#reporting.reporting-heading {
+    @include sticky-values-for-headings;
+}
+
+h5#financials.financials-heading {
+    @include sticky-values-for-headings;
+}

@@ -1,0 +1,30 @@
+///////////////////////////////////////////////////////////
+/* blog styles only */
+
+.blog-image-main {
+    width: 100%;
+    object-fit: cover;
+    height: 130px;
+    @include media-breakpoint-up(sm) {
+        object-fit: cover;
+        height: 150px;
+    }
+
+    @include media-breakpoint-up(md) {
+        object-fit: cover;
+        height: 200px;
+    }
+    @include media-breakpoint-up(lg) {
+        height: 280px;
+    }
+    @include media-breakpoint-up(xl) {
+        height: 350px;
+        object-fit: cover;
+        
+    }
+}
+
+.blog-image-secondary {
+    object-fit: cover;
+    height: 120px;
+}

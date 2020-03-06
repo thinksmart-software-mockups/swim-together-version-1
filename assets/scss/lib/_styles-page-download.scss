@@ -1,0 +1,184 @@
+///////////////////////////////////////////////////////////
+/* styles for download page only */
+.downloads-logo-container {
+    height: 80px;
+}
+
+.btn-cb-dark-shadow {
+    box-shadow: 0 3px 0 $cb-dark;
+}
+
+.btn-db-dark-shadow {
+    box-shadow: 0 3px 0 $db-dark;
+}
+
+.btn-gb-dark-shadow {
+    box-shadow: 0 3px 0 $gb-dark;
+}
+
+.btn-mb-dark-shadow {
+    box-shadow: 0 3px 0 darken($mb-dark, 10%);
+}
+
+.btn-sb-dark-shadow {
+    box-shadow: 0 3px 0 $sb-dark;
+}
+
+.btn-swb-dark-shadow {
+    box-shadow: 0 3px 0 $swb-dark;
+}
+
+.btn-tb-dark-shadow {
+    box-shadow: 0 3px 0 $tb-dark;
+}
+
+.btn-tss-dark-shadow {
+    box-shadow: 0 3px 0 $tss-dark;
+}
+
+///////////////////////////////////////////////////////////
+/* styles for download page only */
+
+/* downloads modal */
+.modal-icon {
+    height: 22px;
+    width: auto;
+}
+.downloads-modal {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    @include media-breakpoint-up(sm) {
+        width: 100%;    
+    }
+}
+
+.downloads-container {
+    margin-left: auto;
+    margin-right: auto;
+    @include media-breakpoint-up(lg) {
+        width: 900px; 
+    }
+    @include media-breakpoint-up(xl) {
+        width: 960px;
+    }
+}
+
+.download-picture-container {
+    height: 120px;
+    overflow:hidden;
+    @include media-breakpoint-up(sm) {    
+        height: 150px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 140px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 170px;           
+    }
+}
+
+.download-icons-and-logo {
+    $icon-logo-width: 55px;
+    width: $icon-logo-width;
+}
+
+.downloads-graphic {
+    width: 90%;
+    @include media-breakpoint-up(sm) {    
+        width: 85%;
+    }
+}
+
+.downloads-point-of-sale {
+    width: 80%;
+    height: auto;
+    top: .5rem;
+    left: 10%;
+    @include media-breakpoint-up(sm) {    
+        top: 1rem;
+        left: 25%;
+        width: 50%;
+    }
+
+    @include media-breakpoint-up(md) {    
+        width: 75%;
+        left: 10%;
+    }
+
+    @include media-breakpoint-up(lg) {    
+        top: .75rem;
+        width: 55%;
+        left: 20%;
+    }
+}
+
+.google-play-badge, .app-store-badge  {
+    height: 40px;
+    
+    @include media-breakpoint-up(sm) {
+        height: 45px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 40px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 45px;
+    }
+
+}
+
+.button-shadow {
+    box-shadow: 0 4px 0px darken($primary, 10%);
+}
+
+/* Downloads Accordion */
+.accordion-arrow.mb-0 > a {
+    display: block;
+    position: relative;
+}
+
+.accordion-arrow.mb-0 > a:after {
+    content: "\f078"; /* fa-chevron-down */
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 0;
+    opacity: .2;
+  }
+
+.accordion-arrow.mb-0 > a[aria-expanded="true"]:after {
+    content: "\f077"; /* fa-chevron-up */
+    opacity: .2;
+  }
+
+.features-arrow {
+    top: 5rem;
+}
+
+.download-hero-image {
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        bottom: -10%;
+        height: 200px;
+        left: 15%;
+    }
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        bottom: 10%;
+        height: 210px;
+        left: 10%;
+    }
+}
+
+.icon-logo-style-downloads {
+    width: auto;
+    height: 40px;
+    @media screen and (min-width: 992px) {
+        height: 45px;
+        width: auto;
+    }
+}

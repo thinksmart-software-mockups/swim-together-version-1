@@ -1,0 +1,385 @@
+/////////////////////////////////////////////////////////////////////////
+// .cb-headline-large {
+
+// }
+
+.db-headline-large {
+    z-index: 9;
+    position: relative;
+}
+
+// .gb-headline-large {
+
+// }
+
+// .mb-headline-large {
+
+// }
+
+// .sb-headline-large {
+
+// }
+
+// .swb-headline-large {
+
+// }
+
+// .tb-headline-large {
+
+// }
+
+// .tss-headline-large {
+
+// }
+
+.classbiz-hero-image {
+
+    @include media-breakpoint-up(md) {
+
+    }
+
+    @include media-breakpoint-up(lg) {
+
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+}
+
+.dancebiz-hero-image {
+    // background-color: red;
+    @include media-breakpoint-up(md) {
+        // z-index: 1;
+        position: absolute;
+        width: auto;
+        height: 330px;
+        bottom: -60px;
+        left: -70px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        width: auto;
+        height: 420px;
+        bottom: -80px;
+        left: -95px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 480px;
+        bottom: -115px;
+        left: -150px;
+    }
+}
+
+.gymnasticsbiz-hero-image {
+
+    @include media-breakpoint-up(md) {
+
+    }
+
+    @include media-breakpoint-up(lg) {
+
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+}
+
+
+.musicbiz-hero-image {
+
+    @include media-breakpoint-up(md) {
+
+    }
+
+    @include media-breakpoint-up(lg) {
+
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+}
+
+.sportsbiz-hero-image {
+
+    @include media-breakpoint-up(md) {
+
+    }
+
+    @include media-breakpoint-up(lg) {
+
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+}
+
+.swimbiz-hero-image {
+
+    @include media-breakpoint-up(md) {
+
+    }
+
+    @include media-breakpoint-up(lg) {
+
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+}
+
+.tennibiz-hero-image {
+
+    @include media-breakpoint-up(md) {
+
+    }
+
+    @include media-breakpoint-up(lg) {
+
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+}
+
+.tss-hero-image {
+
+    @include media-breakpoint-up(md) {
+
+    }
+
+    @include media-breakpoint-up(lg) {
+
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+}
+
+/* right arrow appearing in the overviews page for the call to action card item */ 
+.right-arrow-icon-circle {
+    position: absolute;
+    left: -19px;
+    top: 35%;
+    filter: drop-shadow(0 0 2px rgba(0,0,0, .2)); 
+}
+
+/////////////////////////////////////////////////////////////////////////
+/* overview page */
+// overview card-container
+.overview-card-container-lg-and-xl {
+    @include media-breakpoint-up(lg) {
+        top: -5em;
+    }
+    @include media-breakpoint-up(xl) {
+        top: -6.5em;
+    }
+}
+
+/* styling for all videos */
+.iframe-container {
+    overflow: hidden;
+    // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+    padding-top: 56.25%;
+    position: relative;
+  }
+   
+  .iframe-container iframe {
+     border: 0;
+    //  border: 1px solid rgba(92,190,255,.3);
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
+
+////////////////////////////////////////////////
+/* carousel styles */
+.carousel-fade {
+	.carousel-item {
+		display: block;
+		opacity: 0;
+		transition: opacity .75s ease-in-out;
+		&.active {
+			opacity: 1;
+		}
+	}
+}
+
+// specific styles for dancebiz testimonials
+.db-testimonials {
+    height: 350px;
+    @include media-breakpoint-up(sm) {
+        height: 230px;
+    }
+    @include media-breakpoint-up(md) {
+        height: 220px;
+    }
+    @include media-breakpoint-up(lg) {
+        height: 250px;
+    }
+    @include media-breakpoint-up(xl) {
+        height: 250px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 2rem;
+        position: absolute;
+        background-image: none;
+        top: 35%;
+    }
+    
+    .carousel-control-next-icon:after {
+      content: '\f105';
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $gray-400;
+    }
+    
+    .carousel-control-prev-icon:after {
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      content: '\f104';
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $gray-400;
+    }
+
+    .carousel-indicators li {
+        background-color: $gray-200;
+    }
+
+    .carousel-indicators .active {
+        background-color: $gray-500;
+    }
+}
+
+.testimonials-card {
+    @include media-breakpoint-up(xl) {
+        box-shadow: $box-shadow-lg;
+    }
+}
+
+// main slide for testimonials
+.main-slide-container-for-client-testimonials {
+    
+    .testimonials-slide-container {
+        height: auto;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        position: absolute;
+        background-image: none;
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+        @include media-breakpoint-up(lg) {
+            // width: 53.33%;
+            width: 7.5%;
+        }
+        
+        @include media-breakpoint-up(xl) {
+            // width: 53.33%;
+            width: 5%;
+        }
+    }
+
+    .carousel-control-next-icon:after {
+      content: '\f105';
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $gray-400;
+    }
+    
+    .carousel-control-prev-icon:after {
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      content: '\f104';
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $gray-400;
+    }
+
+    .carousel-indicators li {
+        background-color: $gray-200;
+    }
+
+    .carousel-indicators .active {
+        background-color: $gray-500;
+    }
+
+    .carousel-indicators {
+        bottom: -1.5rem;
+    }
+}
+
+// index / overview page slide styles for partners generic section
+.main-slide-container-for-partners {
+      
+    .partners-slide-container {
+        height: 160px;
+    }
+   
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        position: absolute;
+        background-image: none;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+    }
+
+    .carousel-control-next-icon:after {
+      content: '\f105';
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $gray-400;
+    }
+    
+    .carousel-control-prev-icon:after {
+      font-family: "Font Awesome 5 Free"; font-weight: 900;
+      content: '\f104';
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $gray-400;
+    }
+
+    .carousel-indicators li {
+        background-color: $gray-200;
+    }
+
+    .carousel-indicators .active {
+        background-color: $gray-500;
+    }
+
+    .carousel-indicators {
+        bottom: -1.25rem;
+    }
+}
+
+  .testimonial-container {
+    //   height: 150px;
+      width: 100%;
+      overflow: hidden;
+  }
+
+  .testimonial-cover {
+    object-fit: cover;
+    height: 170px;
+    width: 100%;
+    overflow: hidden;
+}

@@ -1,0 +1,24 @@
+.signup-icons {
+    width: 60px;
+    @include media-breakpoint-up(lg) {
+        width: 80px;
+    }
+}
+
+.form-shadow {
+    @include media-breakpoint-up(lg) {
+        box-shadow: $box-shadow-lg;
+    }
+}
+
+// Inset shadow overlay for signup form and footer
+.gradient-inset-shadow-deep-form {
+    @media screen and (min-width: 992px) {
+        box-shadow: inset 0px 0px 75px 25px rgba(0,0,0,.2);
+    }
+}
+
+// light grey divider
+.light-grey-divider {
+    z-index: -1000;
+}

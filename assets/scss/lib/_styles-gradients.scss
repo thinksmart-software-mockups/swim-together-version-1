@@ -1,0 +1,266 @@
+// @import '_styles-biz-colors.scss';
+
+@mixin common-gradient-properties {
+    box-shadow: inset 0px -43px 75px -20px rgba(0,0,0,.2);
+    height: 100%;
+    width:100%;
+    position: absolute;
+    z-index: -1;
+}
+
+////* classbiz gradient mixin *////
+@mixin classbiz-gradient {
+    @include common-gradient-properties();
+    background-color: rgb(150, 62, 153);
+    background: radial-gradient(circle, rgb(150, 62, 153) 25%, rgb(119,48,121) 95%);
+}
+
+////* dancebiz gradient mixin *////
+@mixin dancebiz-gradient {
+    @include common-gradient-properties();
+    background-color: rgb(189, 26, 141);
+    background: radial-gradient(circle, rgba(189,26,141) 25%, rgb(158, 20, 117) 85%, rgb(138, 15, 101) 95%);
+    // background: yellow;
+}
+
+////* gymnasticsbiz gradient mixin *////
+@mixin gymnasticsbiz-gradient {
+    @include common-gradient-properties();
+    background-color: rgb(246,146,30);
+    background: radial-gradient(circle, rgba(246,146,30) 40%, rgba(226,113,8) 87%, rgb(221, 119, 3) 100%);
+}
+
+////* musicbiz gradient mixin *////
+@mixin musicbiz-gradient {
+    @include common-gradient-properties();
+    background: rgb(207,156,46);
+    background: radial-gradient(circle, rgb(207, 156, 46) 40%, rgb(196, 140, 56) 75%, rgb(179, 121, 35) 100%);
+}
+
+////* sportsbiz gradient mixin *////
+@mixin sportsbiz-gradient {
+    @include common-gradient-properties();
+    background: rgb(173, 38, 42);
+    background: radial-gradient(circle, rgb(173, 38, 42) 40%, rgb(156, 32, 36) 67%, rgb(146, 2, 7) 100%);
+}
+
+////* swimbiz gradient mixin *////
+@mixin swimbiz-gradient {
+    @include common-gradient-properties();
+    background: rgb(8, 116, 204);
+    background: radial-gradient(circle, rgb(8, 116, 204) 40%, rgb(5, 112, 199) 67%, rgb(18, 96, 199) 100%);
+}
+
+////* tennisbiz gradient mixin *////
+@mixin tennisbiz-gradient {
+    @include common-gradient-properties();
+    background: rgb(22, 168, 100);
+    background: radial-gradient(circle, rgb(22, 168, 100) 40%, rgb(8, 146, 82) 75%, rgb(3, 124, 68) 100%);
+}
+
+////* thinksmart-software gradient mixin *////
+@mixin thinksmart-software-gradient {
+    @include common-gradient-properties();
+    background: rgb(8, 116, 204);
+    background: radial-gradient(circle, rgb(10, 71, 163) 40%, rgb(14, 67, 148) 67%, rgb(7, 54, 124) 100%);
+}
+
+.cb-gradient {
+    @include classbiz-gradient();
+}
+
+.db-gradient {
+    @include dancebiz-gradient();
+}
+
+.gb-gradient {
+    @include gymnasticsbiz-gradient();
+    // z-index: -5;
+}
+
+.mb-gradient {
+    @include musicbiz-gradient();
+}
+
+.sb-gradient {
+    @include sportsbiz-gradient();
+}
+
+.swb-gradient {
+    @include swimbiz-gradient();
+}
+
+.tb-gradient {
+    @include tennisbiz-gradient();    
+}
+
+.tss-gradient {
+    @include thinksmart-software-gradient();
+}
+
+
+// main hero container
+.hero-container {
+    position: relative;
+}
+
+// hero gradient background (black values only which fade to the center)
+.hero-gradient-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,.1) 0%,rgba(0,0,0,.1) 75%, rgba(0,0,0,.3) 100%);
+    // background: radial-gradient(circle, rgba(0,0,0,.1) 0%,rgba(146, 3, 146, 0.2) 75%, rgba(121, 1, 81, 0.4) 100%);
+}
+
+.hero-gradient-background-flipped {
+    transform: rotate(180deg); /* Equal to rotateZ(45deg) */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,.1) 0%,rgba(0,0,0,.1) 75%, rgba(0,0,0,.2) 100%);
+    // background: radial-gradient(circle, rgba(0,0,0,.1) 0%,rgba(146, 3, 146, 0.2) 75%, rgba(121, 1, 81, 0.4) 100%);
+}
+
+
+// hero inset shadow
+.gradient-inset-shadow-deep {
+    box-shadow: inset 0px 0px 200px 25px rgba(0,0,0,.2);
+    @media screen and (min-width: 768px) {
+        box-shadow: inset 0px 0px 150px 45px rgba(0,0,0,.3);
+    }
+
+    @media screen and (min-width: 992px) {
+        box-shadow: inset 0px 0px 200px 45px rgba(0,0,0,.3);
+    }
+}
+
+
+
+// Nav top
+.nav-top-bg {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    // background-color: red;
+}
+
+// Nav gradient for top navigation
+.nav-gradient:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    // background: rgb(0,0,0);
+    // background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0.3) 75%);
+    @media screen and (min-width: 992px) {
+        // opacity: .5;
+        background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 25%, rgba(0,0,0,0.25) 65%, rgba(0,0,0,0.4) 95%);
+        // background: rgb(0,0,0);
+    }
+
+}
+
+// .nav-gradient-2:before {
+//     content: "";
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     left: 0;
+//     z-index: -1;
+//     // background: rgb(0,0,0);
+//     // background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0.3) 75%);
+//     @media screen and (min-width: 992px) {
+//         // opacity: .5;
+//         background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 25%, rgba(0,0,0,0.25) 65%, rgba(0,0,0,0.3) 95%);
+//         // background: rgb(0,0,0);
+//     }
+
+// }
+
+
+
+
+////////////////////////////////////////////
+/* code test to check if all is working */
+// .shape-test {
+//     position: relative;
+//     height: 250px;
+//     width: 400px;
+//     margin-top: 100px;
+//     border-radius: 15px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     background-color: olive;
+// }
+
+// .shape-test:after {
+//     content: "Code Test";
+//     text-align: center;
+//     padding-top: 12.5%;
+//     color: olive;
+//     background-color: khaki;
+//     top: 25%;
+//     left: 12.5%;
+//     width: 75%;
+//     height: 50%;
+//     position: absolute;
+//     border-radius: 10px;
+// }
+////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////
+@mixin gradient {
+    
+    // classbiz
+    // background-color: rgb(150, 62, 153);
+    // background: radial-gradient(circle, rgb(150, 62, 153) 25%, rgb(119,48,121) 95%);
+
+    // dancebiz
+    // background-color: rgb(189, 26, 141);
+    // background: radial-gradient(circle, rgba(189,26,141) 25%, rgb(158, 20, 117) 85%, rgb(158, 20, 117) 100%);
+
+    // gymnasticsbiz
+    // background-color: rgb(246,146,30);
+    // background: radial-gradient(circle, rgba(246,146,30) 40%, rgba(226,113,8) 87%, rgb(221, 119, 3) 100%);
+
+    // musicbiz
+    // background: rgb(207,156,46);
+    // background: radial-gradient(circle, rgb(207, 156, 46) 40%, rgb(196, 140, 56) 75%, rgb(179, 121, 35) 100%);
+
+    // sportsbiz
+    // background: rgb(173, 38, 42);
+    // background: radial-gradient(circle, rgb(173, 38, 42) 40%, rgb(156, 32, 36) 67%, rgb(146, 2, 7) 100%);
+
+    // swimbiz
+    // background: rgb(8, 116, 204);
+    // background: radial-gradient(circle, rgb(8, 116, 204) 40%, rgb(5, 112, 199) 67%, rgb(18, 96, 199) 100%);
+
+    // tennisbiz
+    background: rgb(22, 168, 100);
+    background: radial-gradient(circle, rgb(22, 168, 100) 40%, rgb(8, 146, 82) 75%, rgb(3, 124, 68) 100%);
+
+    // thinksmart software
+    // background: rgb(8, 116, 204);
+    // background: radial-gradient(circle, rgb(10, 71, 163) 40%, rgb(13, 69, 153) 67%, rgb(7, 57, 133) 100%);
+
+    // for all biz colors
+    box-shadow: inset 0px -43px 75px -50px rgba(0,0,0,.1);
+    position: relative;
+}
+
+// gradient big
+.gradient-main-1 {
+    @include gradient();
+    overflow: hidden;
+}
+
+/////////////////////////////////////////////////////////////////////////

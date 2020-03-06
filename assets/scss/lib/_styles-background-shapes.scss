@@ -1,0 +1,232 @@
+///////////////////////////////////////////////////////////////////////////////////
+// background skewed shapes start
+
+// left side 
+.shape-backgrounds-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform:skew(-20deg);
+}
+
+.shape-graphic-container-left {
+    opacity: .8;
+    position: absolute;
+    height: 100%;
+    left: -15%;
+    width: 33.33%;
+    // @include media-breakpoint-up(sm) {
+    //     left: -7.5%;
+    //     width: 33.33%;
+    // }
+    @media screen and (min-width: 576px) {
+        left: -7.5%;
+        width: 33.33%;
+    }
+}
+
+.shape-graphic-left-side-a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.03);
+    left: 0;
+}
+
+.shape-graphic-left-side-a1 {
+    position: absolute;
+    height: 100%;
+    width: 38.5%;
+    background-color: rgba(0,0,0,.02);
+    left: 0;
+}
+
+.shape-graphic-left-side-a:before {
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: 66.66%;
+    background-color: rgba(0,0,0,.04);
+    // @include media-breakpoint-up(xl) {
+    //     width: 80%;
+    // }
+    @media screen and (min-width: 1200px) {
+        width: 80%;
+    }
+}
+
+.shape-graphic-left-side-a:after {
+    content: "";
+     position: absolute;
+    height: inherit;
+    width: 33.33%;
+    background-color: rgba(0,0,0,.05);
+    // @include media-breakpoint-up(xl) {
+    //     width: 80%;
+    // }
+    @media screen and (min-width: 1200px) {
+        width: 80%;
+    }
+}
+
+.shape-graphic-left-side-a-extra-color-bar {
+    position: absolute;
+    height: 100%;
+    width: 53.33%;
+    background-color: rgba(0,0,0,.06);
+    // @include media-breakpoint-up(xl) {
+    //     width: 60%;
+    // }
+    @media screen and (min-width: 1200px) {
+        width: 60%;
+    }
+}
+
+.shape-graphic-left-side-a-last {
+    // @include media-breakpoint-up(xl) {
+    //     position: absolute;
+    //     height: 100%;
+    //     left: 0;
+    //     background-color: rgba(0,0,0,.03);
+    //     width: 38.5%;
+    // }
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        background-color: rgba(0,0,0,.03);
+        width: 38.5%;
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////
+
+// right side
+.shape-right {
+        opacity: .8;
+        transform: rotate(180deg);
+        position: absolute;
+        height: 100%;
+        right: -25%;
+        width: 33.33%;
+        // @include media-breakpoint-up(sm) {
+        //     right: -12.5%;
+        //     width: 33.33%;
+        // }
+        @media screen and (min-width: 576px) {
+            right: -12.5%;
+            width: 33.33%;
+        }
+}
+
+//////////////////////////////////////////////////////////////////
+/* small background angled shapes */
+.shape-graphic-small-1:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    left: -11%;
+    background-color: rgba(0,0,0,.04);
+    // background-color: red;
+    transform:skew(-20deg);
+    // @include media-breakpoint-up(xl) {
+    //     width: 80%;
+    // }
+    @media screen and (min-width: 1200px) {
+        // width: 80%;
+    }
+    
+}
+
+.shape-graphic-small-2:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    left: -10%;
+    background-color: rgba(0,0,0,.04);
+    // background-color: red;
+    transform:skew(-20deg);
+    // @include media-breakpoint-up(xl) {
+    //     width: 80%;
+    // }
+    @media screen and (min-width: 1200px) {
+        // width: 80%;
+    }
+   
+}
+
+.shape-graphic-small-3:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 31%;
+    left: -15%;
+    background-color: rgba(0,0,0,.04);
+    // background-color: red;
+    transform:skew(-20deg);
+    // @include media-breakpoint-up(xl) {
+    //     width: 80%;
+    // }
+    @media screen and (min-width: 1200px) {
+        // width: 80%;
+    }
+   
+}
+
+.shape-graphic-small-4:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    right: -11%;
+    background-color: rgba(0,0,0,.04);
+    // background-color: red;
+    transform:skew(-20deg);
+    // @include media-breakpoint-up(xl) {
+    //     width: 80%;
+    // }
+    @media screen and (min-width: 1200px) {
+        // width: 80%;
+    }
+    
+}
+
+.shape-graphic-small-5:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    right: -10%;
+    background-color: rgba(0,0,0,.04);
+    // background-color: red;
+    transform:skew(-20deg);
+    // @include media-breakpoint-up(xl) {
+    //     width: 80%;
+    // }
+    @media screen and (min-width: 1200px) {
+        // width: 80%;
+    }
+    
+}
+
+.shape-graphic-small-6:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 31%;
+    right: -15%;
+    background-color: rgba(0,0,0,.04);
+    // background-color: red;
+    transform:skew(-20deg);
+    // @include media-breakpoint-up(xl) {
+    //     width: 80%;
+    // }
+    @media screen and (min-width: 1200px) {
+        // width: 80%;
+    }
+    
+}
+//////////////////////////////////////////////////////////////////
